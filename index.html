@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA Bright</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <i class="fas fa-bars hamburger"></i>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+        <div class="slide active" style="background-image: url('https://www.oorjaa.in/cdn/shop/products/Image-4095_1000x.jpg?v=1537790355')"></div>
+        <div class="slide" style="background-image: url('https://www.oorjaa.in/cdn/shop/products/Coco_Flower_Pendant_Lamp_Small_19e57d42-6769-4854-9e09-805c732aee29_1000x.jpg?v=1672831593')"></div>
+        <div class="slide" style="background-image: url('https://www.orangetree.in/cdn/shop/products/gallery_1_klimthanginglampbig-buyhangingkitchenlightsonline.jpg?v=1693897577')"></div>
+        <div class="banner-content">
+            <h1>Brighten Your World with F.A Bright Trader</h1>
+            <p>Innovative Lighting Solutions – Stylish, Durable, and Energy-Efficient for Every Space.</p>
+            <div class="btn-animated"
+                 onclick="location.href='#products'">Explore Our Collection</div>
+                 <br>
+                 <br>
+                <div class="btn-animated-contact"
+                 onclick="openPopup()">Contact Us Today</div>
+            
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+        <div class="section-header">
+            <h2>Our Products</h2>
+        </div>
+        <div class="product-grid">
+            <!-- Product cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Us</h2>
+        </div>
+        <p>At F.A Bright Trader, we specialize in creating exceptional lighting solutions that bring elegance and functionality to every corner of your home, office, or outdoor space.
+
+            With a commitment to quality and innovation, our product range includes hanging lights, spike lights, updown lights, wall luminaries, and more. Each design reflects superior craftsmanship,
+             energy efficiency, and a modern aesthetic, ensuring your lighting is as stylish as it is practical.</p>
+             <br>
+             <h3>Why Choose Us?</h3>
+             <p>Unmatched Build Quality
+                Modern and Timeless Designs
+                Tailored Lighting Solutions
+                Suitable for Residential, Commercial, and Outdoor Applications</p>
+                <p>Illuminate your spaces with F.A Bright Trader – where quality meets brilliance.
+
+                </p>
+    </section>
+
+    <!-- Contact Popup -->
+    <div class="popup" id="contact-popup">
+        <div class="popup-content">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div><button class="close-btn" onclick="closePopup()">&times;</button>
+                </div>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Contact Button -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Catalogue Button -->
+    <section class="catalogue">
+        <div class="section-header">
+            <h2>Download Catalogue</h2>
+        </div>
+        <button onclick="downloadCatalogue()">Download PDF</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>123 Your Street, City, Country</p>
+        <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Banner Slider
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(nextSlide, 5000);
+
+        // Sample product data - replace with your actual products
+        const products = [
+        {
+                name: 'Product 1',
+                image: 'images',
+                link: 'https://www.oorjaa.in/cdn/shop/products/Image-4095_1000x.jpg?v=1537790355'
+            },
+            {
+                name: 'Product 2',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%202'
+            },
+            {
+                name: 'Product 3',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%201'
+            },
+            {
+                name: 'Product 4',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%202'
+            },
+            {
+                name: 'Product 5',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%201'
+            },
+            {
+                name: 'Product 6',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%202'
+            },
+            {
+                name: 'Product 7',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%201'
+            },
+            {
+                name: 'Product ',
+                image: '/api/placeholder/400/400',
+                link: 'https://wa.me/your-number?text=I%20am%20interested%20in%20Product%202'
+            },
+            
+            // Add more products as needed
+        ];
+         // Populate products
+         const productGrid = document.querySelector('.product-grid');
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="product-image">
+                <h3>${product.name}</h3>
+            `;
+            productCard.addEventListener('click', () => {
+                window.location.href = product.link;
+            });
+            productGrid.appendChild(productCard);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Contact Popup
+        function openPopup() {
+            document.getElementById('contact-popup').classList.add('show');
+        }
+
+        function closePopup() {
+            document.getElementById('contact-popup').classList.remove('show');
+        }
+
+        // Send Contact Form
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simulate email sending
+            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            closePopup();
+        });
+
+        // Download Catalogue
+        function downloadCatalogue() {
+            const link = document.createElement('a');
+            link.href = ''; // Replace with your actual PDF path
+            link.download = 'catalogue.pdf';
+            link.click();
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
