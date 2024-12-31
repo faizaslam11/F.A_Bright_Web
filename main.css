@@ -26,7 +26,6 @@
 
 .nav-links li {
     padding: 1rem;
-    
 }
 
 .nav-links a {
@@ -34,12 +33,11 @@
     text-decoration: none;
     font-size: 1.1rem;
 }
+
 .logo {
     height: 50px; /* Adjust height as needed */
     margin-right: 95%; /* Space between logo and hamburger icon */
-    position:sticky; 
-    
-    
+    position: sticky; 
 }
 
 .hamburger {
@@ -145,7 +143,7 @@
     transform: scale(0.98); /* Click effect */
 }
 
-.btn-animated-contact{
+.btn-animated-contact {
     display: inline-block;
     font-size: 1.2rem;
     color: #020202;
@@ -222,6 +220,7 @@
     background: white;
     text-align: center;
 }
+
 /* General Styles for About Section */
 #about {
     background-color: #f8f9fa; /* Light background for contrast */
@@ -279,7 +278,6 @@
         font-size: 1.5rem; /* Adjust subheading size */
     }
 }
-
 
 /* Contact Section */
 .contact {
@@ -372,6 +370,7 @@ footer {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 2000; /* Ensure popup is above other content */
 }
 
 .popup-content {
@@ -379,6 +378,22 @@ footer {
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
+    max-width: 80%; /* Set a maximum width to make it smaller */
+    max-height: 80%; /* Set a maximum height to make it smaller */
+    overflow: auto; /* Allow scrolling if content overflows */
+    z-index: 2001; /* Ensure popup content is above the overlay */
+    position: relative; /* Ensure positioning context */
+}
+
+.close-btn {
+    position: absolute; /* Position relative to the popup content */
+    top: -5px; /* Move further up */
+    right: 5px; /* Move closer to the right */
+    font-size: 1rem; /* Further reduce size */
+    background: black; /* Restore black background */
+    color: white; /* Change text color to white for contrast */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 .popup-content button {
