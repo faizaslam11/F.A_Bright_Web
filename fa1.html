@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.A Bright Trader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fa1.css">
+ 
+ 
+
+</head>
+<body>
+  <!-- back to top button-->
+  <button id="backToTop">↑</button>
+
+  
+    <!-- Navigation -->
+    <!-- <nav class="navbar">
+       <img src="logo.jpg" alt="Logo" class="logo"> 
+        <i class="fas fa-bars hamburger"></i>
+        <ul class="nav-links">
+            <li> <a  href="#about"class="fa1"> F.A Bright Trader</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+    </nav> -->
+
+    <!-- NEW Navigation -->
+    <nav id = "mainnavbar">
+      <div class="wrapper">
+        <div class="logo"><a href="#home"><img src="logo-black.png" alt="Logo" class="logo"></a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <div class="nav-links">
+          <label for="close-btn" id="close-button" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="#home" class="link-7">Home</a></li>
+          <li><a href="#products" class="link-7" >Products</a></li>
+          <li>
+            <a href="#about" class="link-7">About</a>
+          </li>
+          <li>
+            <a href="#contact" class="link-7">Contact</a>
+          </li>
+        </div>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
+
+
+
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+      <div class="background">
+         <div class="slider-container">
+             <div class="slider">
+                 <div class="slide"><img src="slide.jpeg" alt="Image 1"></div>
+                 <div class="slide"><img src="slide1.jpeg" alt="Image 2"></div>
+                 <div class="slide"><img src="slide2.jpeg" alt="Image 3"></div>
+                 <div class="slide"><img src="slide3.jpeg" alt="Image 4"></div>
+                 <div class="slide"><img src="slide4.jpeg" alt="Image 5"></div>
+                 <div class="slide"><img src="slide5.jpeg" alt="Image 6"></div>
+                 <div class="slide"><img src="slide6.jpeg" alt="Image 7"></div>
+             </div>
+             <button class="prev">&#10094;</button>
+             <button class="next">&#10095;</button>
+             <div class="dots-container">
+                 <span class="dot" data-index="0"></span>
+                 <span class="dot" data-index="1"></span>
+                 <span class="dot" data-index="2"></span>
+                 <span class="dot" data-index="3"></span>
+                 <span class="dot" data-index="4"></span>
+                 <span class="dot" data-index="5"></span>
+                 <span class="dot" data-index="6"></span>
+
+             </div>
+         </div>
+     </div>
+      <div class="banner-content">
+        <h1>Brighten Your World with F.A Bright Trader</h1>
+        <p>Innovative Lighting Solutions – Stylish, Durable, and Energy-Efficient for Every Space.</p>
+        <button onclick="location.href='#products'" class="button-57" role="button"><span class="text prod-btn" onclick="location.href='#products'">Explore Our Collection</span><span onclick="location.href='#products'" >See Products!</span></button>
+        <br>
+        <br>
+        <button onclick="location.href='#contact'" class="button-57 cont-btn" role="button"><span class="text cont-btn" onclick="location.href='#contact'">Contact Us Today</span><span onclick="location.href='#contact'" >Message Us!</span></button>
+      </div>
+    </section>
+
+    <!-- Products -->
+   <section id="products" class="product">
+      <div class="container">
+         <h3 class="title"> Products Preview </h3>
+         <div id="card-container" class="products-container"></div>   
+      </div>
+   </section>
+   
+    
+
+
+
+  <!-- --------------------About Us section -------------- -->
+    <h3 class="aboutus"> About Us </h3>
+    <section id="about" class="about">
+      <div class="header"></div>
+      <div class="content">
+        <p>What sets <strong>F.A Bright Trader</strong> apart is our dedication to customization. We understand that every space is unique, and lighting should be as individual as the vision behind it. That's why we proudly offer bespoke manufacturing services, tailoring our products to meet our clients' specific designs and requirements.</p>
+        <div class="divider"></div>
+        <p>Whether you're an architect, interior designer, or homeowner, we work closely with you to bring your lighting concepts to life, ensuring that every piece is crafted to your exact specifications.</p>
+        <br>
+        <p>Our products are sourced from reputable manufacturers and crafted with the highest standards of quality and durability in mind. From the materials we use to the innovative designs we create, every lamp and light fixture we offer is built to last and brighten your space with timeless elegance.</p>
+        <div class="divider"></div>
+        <p>At <strong>F.A Bright Trader</strong>, we don't just sell lighting—we deliver an experience. Our team is dedicated to providing personalized service, offering expert advice, and ensuring seamless delivery and installation.</p>
+        <br>
+        <p>Whether you're illuminating your home, office, or commercial establishment, we are your trusted partner in creating the perfect lighting solution.</p>
+        <br>
+        <p>Let <strong>F.A Bright Trader</strong> light up your world with brilliance, innovation, and unmatched craftsmanship. Together, we can brighten every corner, creating spaces that inspire and captivate.</p>
+        <div class="contactemail">
+            Contact us at: <a href="mailto:fabrighttraders@gmail.com">fabrighttraders@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Popup -->
+    <!-- <div class="popup" id="contact-popup" class="con-pop">
+        <div class="popup-content">
+            <h2 class="contactusheader">Contact Us</h2>
+           
+            <form id="contact-form"  action="https://api.web3forms.com/submit" method="POST"  method="POST">
+                <div><button class="close-btn" onclick="closePopup()">&times;</button>
+                </div>
+                <input type="hidden" name="access_key" value="9549b9e0-ac5b-4f05-a595-eeec729d2999" >
+                <input type="text" id="name" name="name" class="contact-inputs1"  placeholder="Name" required>
+                <input type="email" id="email" name="email" class="contact-inputs1"   placeholder="Email" required>
+                <textarea id="message" name="message" rows="5"  class="contact-inputs1" placeholder="Message" required></textarea>
+                <button type="submit" class="wa-btn2">SUBMIT</button>
+
+                <a href="https://wa.me/915713560790"  class="wa-btn1">Contact us on <i class="fab fa-whatsapp"></i></a>
+            </form>
+            <button class="wa-btn2" onclick="closePopup()">Close</button>
+        </div>
+    </div> -->
+
+    <!-- Contact Button -->
+    <!-- <section id="contact" class="contact">
+        <div class="contact-container">     
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                
+               <div class="section-header">
+                <h2>Contact Us</h2>
+               </div>
+                
+                <input type="hidden" name="access_key" value="9549b9e0-ac5b-4f05-a595-eeec729d2999" >
+                <input type="text" id="name" name="name" placeholder="Name" style="margin-top: 10px;" required class="contact-inputs">
+                <input type="email" id="email" name="email" placeholder="Email" required class="contact-inputs">
+                <textarea id="message"  placeholder="Message"  class="contact-inputs"></textarea>
+                <button type="submit" class = 'subbutton'>Submit </button>
+                
+                <a href="https://wa.me/915713560790"  class="wa-btn">Contact us on <i class="fab fa-whatsapp"></i></a>
+                <h2>&nbsp;</h2>
+
+            </form>
+        </div>
+    </section> -->
+
+  <section id="contact" class="contact">
+    <div class="contact-container">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+            </div>
+
+            <input type="hidden" name="access_key" value="9549b9e0-ac5b-4f05-a595-eeec729d2999">
+            <input type="text" name="name" placeholder="Your Name" required class="contact-inputs">
+            <input type="email" name="email" placeholder="Your Email" required class="contact-inputs">
+            <textarea name="message" placeholder="Your Message" required class="contact-inputs"></textarea>
+
+            <button type="submit" class="subbutton">Send Message</button>
+            <a target="_blank" href="https://wa.me/915713560790" class="wa-btn">
+                <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+            </a>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Testimonials -->
+ <!-- <section class="section__container" id="testimonials">
+    <h2>Testimonials</h2>
+    
+    <div class="section__grid">
+      <div class="section__card">
+        <span><i class="ri-double-quotes-l"></i></span>
+        <h4>Love the simplicity</h4>
+        <p>
+          They understood our brand and created a stunning website design.
+          Professional, responsive, and on-time delivery. Highly recommended!
+        </p>  
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i> 
+         </div>  
+
+        <h5>Allan Collins</h5>
+        <h6>Managing Director</h6>
+      </div>
+      <div class="section__card">
+        <span><i class="ri-double-quotes-l"></i></span>
+        <h4>Excellent Designs</h4>
+        <p>
+          Efficient, reliable, and results-oriented. Visually appealing
+          website, improved online visibility. Highly recommended!
+        </p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i> 
+            
+         </div>
+        <h5>Tanya Grant</h5>
+        <h6>Ceo & Founder</h6>
+      </div>
+      <div class="section__card">
+        <span><i class="ri-double-quotes-l"></i></span>
+        <h4>Efficient and Reliable</h4>
+        <p>
+          Best decision we made. Stunning website, exceptional support. Always
+          available and prompt issue resolution. Hassle-free experience!
+        </p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>      
+         </div>
+        <h5>Clay Washington</h5>
+        <h6>Fashion Designer</h6>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- MEET OUR TEAM-->
+  <!--<section id="meetourteam">
+   <div class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-container">
+          <div class="team-member">
+              <div class="team-member-image">
+                  <img src="team-member1.jpg" alt="Team Member 1">
+              </div>
+              <h3>Laxmi Mahto</h3>
+              <p>Web developer</p>
+          </div>
+          <div class="team-member">
+              <div class="team-member-image">
+                  <img src="team-member2.jpg" alt="Team Member 2">
+              </div>
+              <h3>Tannu Shukla</h3>
+              <p>Web Developer</p>
+          </div>
+          <div class="team-member">
+              <div class="team-member-image">
+                  <img src="team-member3.jpg" alt="Team Member 3">
+              </div>
+              <h3>David Wilson</h3>
+              <p>Marketing Manager</p>
+          </div>
+          <div class="team-member">
+            <div class="team-member-image">
+                <img src="team-member4.jpg" alt="Team Member 4">
+            </div>
+            <h3>David Wilson</h3>
+            <p>Marketing Manager</p>
+        </div>
+      </div>
+  </div>
+  </section>
+-->
+  
+
+    <!-- Catalogue Button -->
+    <!-- <section class="catalogue" >
+        <div id="downloads">
+            <h2 class="head">Download Catalogue</h2>
+       
+        <button  class="dl-btn" onclick="downloadCatalogue()"  >Download PDF</button>
+        </div>
+    </section> -->
+    <section class="catalogue">
+      <div id="downloads">
+          <h2 class="head">Download Catalogue</h2>
+          <button class="dl-btn" onclick="downloadCatalogue()">Download PDF</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer>
+      <div class="footer-details">
+        <div class="footer-column">
+          <h3>Uttar Pradesh</h3>
+          <a href="mailto: fabrighttraders@gmail.com"> fabrighttraders@gmail.com</a>
+          <p> Sir Syed Nagar, Aligarh - 202001<br> Uttar Pradesh, India </p>
+        </div>
+        <div class="footer-column">
+          <h3>Odisha</h3>
+          <a href="mailto: fabrighttraders@gmail.com"> fabrighttraders@gmail.com</a>
+          <p>Sambalpur - 768001<br> Odisha, India</p>
+        </div>
+
+        <div id="with-logos" class="footer-column">
+          <p id="footytitty" class="footer-title">F.A Bright Trader®</p>
+          <p id="follow">Follow Us</p>
+          <div class="social-links">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61570994420153&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/f.a_bright_traders?igsh=MXRxbTU3bG0yOGk4Ng%3D%3D"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://wa.me/915713560790"  ><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+        
+    </footer> -->
+
+    <footer>
+      <div class="footer-details">
+        <div class="footer-column">
+          <h3>Uttar Pradesh</h3>
+          <a href="mailto:fabrighttraders@gmail.com">fabrighttraders@gmail.com</a>
+          <p> Sir Syed Nagar, Aligarh - 202001<br> Uttar Pradesh, India </p>
+        </div>
+    
+        <div class="footer-column">
+          <h3>Odisha</h3>
+          <a href="mailto:fabrighttraders@gmail.com">fabrighttraders@gmail.com</a>
+          <p>Sambalpur - 768001<br> Odisha, India</p>
+        </div>
+    
+        <div id="with-logos" class="footer-column">
+          <div class="logo-title">
+            <img src="logo-white.png" alt="FA Bright Trader Logo" class="footer-logo">
+            <p id="footytitty" class="footer-title">F.A Bright Trader®</p>
+          </div>
+          <div class="social-links">
+            <p id="follow">Follow Us</p>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61570994420153&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/f.a_bright_traders?igsh=MXRxbTU3bG0yOGk4Ng%3D%3D"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://wa.me/915713560790"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </footer>
+    
+
+
+    <!-- <footer>
+      <div class="footer-content">
+          <div class="social-links">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=61570994420153&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/f.a_bright_traders?igsh=MXRxbTU3bG0yOGk4Ng%3D%3D"><i class="fab fa-instagram"></i></a>
+              <a target="_blank" href="https://wa.me/915713560790"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p class="address">123 Your Street, City, Country</p>
+          <p class="copyright">&copy; 2024 Your Brand. All rights reserved.</p>
+      </div>
+  </footer> -->
+  
+
+    <script src = "fa1.js"></script>
+
+</body>
+</html>
